@@ -1,7 +1,8 @@
 
 Vagrant.configure("2") do |config|
-  config.hostmanager.manage_host = true #Activa el plugin Hostmanager para que funcione en esta máquina.
   config.hostmanager.enabled = true   #Le dice a Vagrant que modifique el archivo /etc/hosts de tu ordenador anfitrión (host) para que puedas acceder a las VMs por su nombre (hostname) en lugar de la IP.
+  config.hostmanager.manage_host = true #Activa el plugin Hostmanager para que funcione en esta máquina.
+  config.hostmanager.manage_guest = true
 
 
   config.vm.boot_timeout= 600

@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"D:/DevOps/projects/multi_tier_webapp","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

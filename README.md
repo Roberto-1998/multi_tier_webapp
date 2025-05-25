@@ -4,7 +4,7 @@ This project sets up a multi-tier architecture using Vagrant and VirtualBox, sim
 
 ## 🖼️ Architecture Diagram
 
-![Architecture Diagram](images/architecture.png)
+![Architecture Diagram](architecture/multi_tier_webapp_v1.drawio.png)
 
 ## 🧱 Project Structure
 

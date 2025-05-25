@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
     db01.vm.provider "virtualbox" do |vb|
       vb.memory = "600"
     end
+    db01.vm.provision "shell", path: "./provisioning/mysql.sh"
   end
 
 
@@ -30,6 +31,7 @@ Vagrant.configure("2") do |config|
     mc01.vm.provider "virtualbox" do |vb|
       vb.memory = "600"
     end
+    mc01.vm.provision "shell", path: "./provisioning/memcached.sh"
   end
 
 
@@ -44,6 +46,7 @@ Vagrant.configure("2") do |config|
     rmq01.vm.provider "virtualbox" do |vb|
       vb.memory = "600"
     end
+    rmq01.vm.provision "shell", path: "./provisioning/rabbitmq.sh"
   end
 
 
@@ -58,6 +61,7 @@ Vagrant.configure("2") do |config|
     app01.vm.provider "virtualbox" do |vb|
       vb.memory = "600"
     end
+    app01.vm.provision "shell", path: "./provisioning/tomcat.sh"
   end
 
 
@@ -73,6 +77,7 @@ Vagrant.configure("2") do |config|
       #vb.gui = true #significa que la interfaz gráfica de la máquina virtual (VM) estará habilitada cuando se inicie. Es decir, verás una ventana del sistema operativo Ubuntu (como si iniciaras una VM en VirtualBox manualmente).
       vb.memory = "600"
     end
+    web01.vm.provision "shell", path: "./provisioning/web.sh"
   end
 
 end

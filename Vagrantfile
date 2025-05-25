@@ -70,7 +70,7 @@ Vagrant.configure("2") do |config|
     #web01.vm.network "public_network"
     web01.vm.network "private_network", ip: "192.168.50.8"
     web01.vm.provider "virtualbox" do |vb|
-      vb.gui = true #significa que la interfaz gráfica de la máquina virtual (VM) estará habilitada cuando se inicie. Es decir, verás una ventana del sistema operativo Ubuntu (como si iniciaras una VM en VirtualBox manualmente).
+      #vb.gui = true #significa que la interfaz gráfica de la máquina virtual (VM) estará habilitada cuando se inicie. Es decir, verás una ventana del sistema operativo Ubuntu (como si iniciaras una VM en VirtualBox manualmente).
       vb.memory = "600"
     end
   end
